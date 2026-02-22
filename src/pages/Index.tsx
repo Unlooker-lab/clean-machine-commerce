@@ -1,14 +1,25 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import HeroSection from "@/components/home/HeroSection";
+import CategoriesGrid from "@/components/home/CategoriesGrid";
+import FeaturedProducts from "@/components/home/FeaturedProducts";
+import AdvantagesSection from "@/components/home/AdvantagesSection";
+import SolutionsSection from "@/components/home/SolutionsSection";
+import BrandsSlider from "@/components/home/BrandsSlider";
+import BlogPreview from "@/components/home/BlogPreview";
+import ContactCTA from "@/components/home/ContactCTA";
+import SEOBlock from "@/components/home/SEOBlock";
 
-const Index = () => {
-  return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
-    </div>
-  );
-};
+const Index = () => (
+  <>
+    <HeroSection />
+    <CategoriesGrid />
+    <FeaturedProducts />
+    <AdvantagesSection />
+    <SolutionsSection />
+    <BrandsSlider />
+    <BlogPreview />
+    <ContactCTA />
+    <SEOBlock />
+  </>
+);
 
 export default Index;
